@@ -7,6 +7,7 @@
 
 import { Sequelize } from 'sequelize';
 import dotenv        from 'dotenv';
+import pg from 'pg';
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ if (url) {
   // Producción: Neon entrega una sola DATABASE_URL
   sequelize = new Sequelize(url, {
     dialect:        'postgres',
+    dialectModule:  pg,
     logging:        false,
     dialectOptions: {
       ssl: {
@@ -38,6 +40,7 @@ if (url) {
       host:    process.env.DB_HOST,
       port:    parseInt(process.env.DB_PORT) || 5432,
       dialect: 'postgres',
+      dialectModule: pg,
       logging: false,
       dialectOptions: {
         ssl: {
