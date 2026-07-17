@@ -1,0 +1,70 @@
+const styles = {
+  pagina: {
+    fontFamily: "'Montserrat', sans-serif",
+    backgroundColor: '#f5f5f5',
+    minHeight: '100vh',
+  },
+  contenido: {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '36px 24px',
+  },
+  barraFiltros: {
+    display: 'flex',
+    gap: '12px',
+    marginBottom: '32px',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+  },
+  inputBusqueda: {
+    flex: 1,
+    minWidth: '220px',
+    padding: '11px 16px',
+    border: '1px solid #dcdcdc',
+    borderRadius: '8px',
+    fontSize: '0.9rem',
+    fontFamily: "'Montserrat', sans-serif",
+    outline: 'none',
+    backgroundColor: '#ffffff',
+    color: '#222222',
+  },
+  selectCarrera: {
+    padding: '11px 16px',
+    border: '1px solid #dcdcdc',
+    borderRadius: '8px',
+    fontSize: '0.9rem',
+    fontFamily: "'Montserrat', sans-serif",
+    outline: 'none',
+    backgroundColor: '#ffffff',
+    color: '#222222',
+    cursor: 'pointer',
+    minWidth: '200px',
+  },
+  seccion: {
+    marginBottom: '52px',
+  },
+  tituloSeccion: {
+    fontSize: '1rem',
+    fontWeight: '700',
+    letterSpacing: '0.08em',
+    textTransform: 'uppercase',
+    color: '#111111',
+    marginBottom: '20px',
+    paddingBottom: '10px',
+    borderBottom: '2px solid #ff5117',
+    display: 'inline-block',
+  },
+  grilla: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+    gap: '24px',
+  },
+  sinResultados: {
+    color: '#999999',
+    fontSize: '0.9rem',
+    fontStyle: 'italic',
+    padding: '20px 0',
+  },
+};
+
+export default styles;

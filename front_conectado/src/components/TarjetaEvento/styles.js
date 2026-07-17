@@ -1,0 +1,68 @@
+const styles = {
+  tarjeta: {
+    backgroundColor: '#ffffff',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    cursor: 'pointer',
+    transition: 'transform 0.18s ease, box-shadow 0.18s ease',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  imagen: {
+    width: '100%',
+    height: '180px',
+    objectFit: 'cover',
+    display: 'block',
+  },
+  cuerpo: {
+    padding: '18px 20px',
+    display: 'flex',
+    flexDirection: 'column',
+    flex: 1,
+  },
+  carrera: {
+    fontSize: '0.7rem',
+    fontWeight: '700',
+    letterSpacing: '0.07em',
+    textTransform: 'uppercase',
+    color: '#ff5117',
+    marginBottom: '8px',
+    display: 'block',
+  },
+  titulo: {
+    fontSize: '0.97rem',
+    fontWeight: '700',
+    color: '#111111',
+    marginBottom: '8px',
+    lineHeight: '1.4',
+  },
+  fecha: {
+    fontSize: '0.78rem',
+    color: '#888888',
+    marginBottom: '10px',
+    fontWeight: '500',
+  },
+  descripcion: {
+    fontSize: '0.82rem',
+    color: '#555555',
+    lineHeight: '1.6',
+    flex: 1,
+    display: '-webkit-box',
+    WebkitLineClamp: 3,
+    WebkitBoxOrient: 'vertical',
+    overflow: 'hidden',
+  },
+  pie: {
+    marginTop: '14px',
+    display: 'inline-block',
+    padding: '3px 10px',
+    backgroundColor: '#f0f0f0',
+    borderRadius: '4px',
+    fontSize: '0.7rem',
+    fontWeight: '600',
+    color: '#555555',
+    alignSelf: 'flex-start',
+  },
+};
+
+export default styles;

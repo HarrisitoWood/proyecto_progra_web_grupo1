@@ -1,0 +1,67 @@
+const styles = {
+  fondo: {
+    position: 'fixed',
+    inset: 0,
+    backgroundColor: 'rgba(0,0,0,0.55)',
+    zIndex: 500,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '24px',
+  },
+  caja: {
+    backgroundColor: '#ffffff',
+    borderRadius: '10px',
+    padding: '32px 28px',
+    maxWidth: '380px',
+    width: '100%',
+    fontFamily: "'Montserrat', sans-serif",
+    boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
+    textAlign: 'center',
+  },
+  icono: {
+    fontSize: '1.8rem',
+    marginBottom: '12px',
+  },
+  titulo: {
+    fontSize: '1.1rem',
+    fontWeight: '700',
+    color: '#111111',
+    marginBottom: '10px',
+  },
+  mensaje: {
+    fontSize: '0.88rem',
+    color: '#555555',
+    marginBottom: '28px',
+    lineHeight: '1.6',
+  },
+  acciones: {
+    display: 'flex',
+    gap: '12px',
+    justifyContent: 'center',
+  },
+  btnCancelar: {
+    padding: '10px 22px',
+    background: '#f0f0f0',
+    color: '#333333',
+    border: 'none',
+    borderRadius: '6px',
+    fontSize: '0.88rem',
+    fontWeight: '600',
+    cursor: 'pointer',
+    fontFamily: "'Montserrat', sans-serif",
+  },
+  btnEliminar: {
+    padding: '10px 22px',
+    background: '#cc2200',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '6px',
+    fontSize: '0.88rem',
+    fontWeight: '700',
+    cursor: 'pointer',
+    fontFamily: "'Montserrat', sans-serif",
+  },
+};
+
+export default styles;
