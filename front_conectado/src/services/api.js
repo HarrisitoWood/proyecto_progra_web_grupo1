@@ -1,12 +1,5 @@
-// ============================================================
-// services/api.js
-// Cliente central fetch → API REST
-// Todas las llamadas HTTP pasan por aquí
-// ============================================================
-
 const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3005';
 
-// Función auxiliar: hace el fetch y lanza error si falla
 async function peticion(ruta, opciones = {}) {
   const token = localStorage.getItem('token');
 
@@ -26,13 +19,11 @@ async function peticion(ruta, opciones = {}) {
   return respuesta.json();
 }
 
-// ── Auth ─────────────────────────────────────────────────────
 export const authApi = {
   registro: (datos)        => peticion('/auth/registro', { method: 'POST', body: JSON.stringify(datos) }),
   login:    (credenciales) => peticion('/auth/login',    { method: 'POST', body: JSON.stringify(credenciales) }),
 };
 
-// ── Eventos ──────────────────────────────────────────────────
 export const eventosApi = {
   getAll:   (params = {}) => {
     const query = new URLSearchParams(params).toString();
@@ -44,7 +35,6 @@ export const eventosApi = {
   remove:   (id)       => peticion(`/eventos/${id}`,{ method: 'DELETE' }),
 };
 
-// ── Usuarios ─────────────────────────────────────────────────
 export const usuariosApi = {
   getAll:  ()           => peticion('/usuarios'),
   getById: (id)         => peticion(`/usuarios/${id}`),
