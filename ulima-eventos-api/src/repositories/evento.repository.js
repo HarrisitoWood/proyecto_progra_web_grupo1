@@ -1,8 +1,3 @@
-// ============================================================
-// src/repositories/evento.repository.js
-// Única capa que sabe cómo acceder a la tabla "eventos"
-// ============================================================
-
 import { Op }    from 'sequelize';
 import { Evento } from '../models/evento.model.js';
 
