@@ -19,7 +19,6 @@ const ModalPerfil = ({ usuario, onCerrar, onActualizar }) => {
     return Object.keys(e).length === 0;
   };
 
-  // ← async porque editarUsuario ahora llama PUT /usuarios/:id
   const handleGuardar = async () => {
     if (!validar()) return;
     const datos = { nombre: form.nombre, carrera: form.carrera };
