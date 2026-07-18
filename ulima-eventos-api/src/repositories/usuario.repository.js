@@ -1,9 +1,3 @@
-// ============================================================
-// src/repositories/usuario.repository.js
-// Única capa que sabe cómo acceder a la tabla "usuarios"
-// El controlador nunca toca Sequelize directamente
-// ============================================================
-
 import { Op }     from 'sequelize';
 import { Usuario } from '../models/usuario.model.js';
 
@@ -25,7 +19,6 @@ export const usuarioRepository = {
     return Usuario.findOne({ where: { codigo } });
   },
 
-  // Busca por correo O por código (para el login)
   findByCredencial(valor) {
     return Usuario.findOne({
       where: { [Op.or]: [{ correo: valor }, { codigo: valor }] },
