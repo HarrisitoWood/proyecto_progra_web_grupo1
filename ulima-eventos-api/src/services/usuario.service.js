@@ -1,8 +1,3 @@
-// ============================================================
-// src/services/usuario.service.js
-// Lógica de negocio de usuarios
-// ============================================================
-
 import bcrypt from 'bcryptjs';
 import { usuarioRepository } from '../repositories/usuario.repository.js';
 
