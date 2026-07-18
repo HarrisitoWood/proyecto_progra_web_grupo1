@@ -1,8 +1,3 @@
-// ============================================================
-// pages/Login.jsx  — sin cambios visuales
-// Solo cambio: handleSubmit ahora es async (login es async)
-// ============================================================
-
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import logo from '../assets/ulimaLogo.png';
@@ -22,7 +17,6 @@ const LoginUsuario = () => {
     else if (rol === 'usuario') navigate('/paginaprincipal');
   }, []);
 
-  // ← async porque login() ahora llama al API
   const handleSubmit = async (e) => {
     e.preventDefault();
     setCargando(true);
