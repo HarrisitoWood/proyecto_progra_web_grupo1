@@ -1,8 +1,3 @@
-// ============================================================
-// src/controllers/usuario.controller.js
-// Solo maneja req/res — delega lógica al service
-// ============================================================
-
 import { listarUsuarios, obtenerUsuario, editarUsuario } from '../services/usuario.service.js';
 
 export async function getUsuarios(req, res) {
