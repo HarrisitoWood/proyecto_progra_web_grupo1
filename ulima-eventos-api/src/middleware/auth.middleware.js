@@ -1,9 +1,3 @@
-// ============================================================
-// src/middleware/auth.middleware.js
-// verificarToken → valida JWT en header Authorization
-// soloAdmin      → verifica que el rol sea "admin"
-// ============================================================
-
 import jwt from 'jsonwebtoken';
 
 const SECRETO = process.env.JWT_SECRET || 'ulima-eventos-secreto';
