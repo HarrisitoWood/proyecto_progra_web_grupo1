@@ -1,9 +1,3 @@
-// ============================================================
-// src/seeders/seed.js
-// Ejecutar UNA SOLA VEZ: node src/seeders/seed.js
-// Recrea las tablas y carga datos iniciales
-// ============================================================
-
 import bcrypt      from 'bcryptjs';
 import dotenv      from 'dotenv';
 import { sequelize } from '../config/database.js';
