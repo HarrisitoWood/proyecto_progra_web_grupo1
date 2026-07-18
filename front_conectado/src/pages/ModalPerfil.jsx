@@ -1,8 +1,3 @@
-// ============================================================
-// pages/ModalPerfil.jsx  — sin cambios visuales
-// Solo cambio: handleGuardar es async (editarUsuario llama al API)
-// ============================================================
-
 import { useState } from 'react';
 import styles from './modalPerfilStyles';
 import IconoOjo from '../components/IconoOjo/IconoOjo';
