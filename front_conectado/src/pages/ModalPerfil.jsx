@@ -1,8 +1,3 @@
-// ============================================================
-// pages/ModalPerfil.jsx  — sin cambios visuales
-// Solo cambio: handleGuardar es async (editarUsuario llama al API)
-// ============================================================
-
 import { useState } from 'react';
 import styles from './modalPerfilStyles';
 import IconoOjo from '../components/IconoOjo/IconoOjo';
@@ -24,7 +19,6 @@ const ModalPerfil = ({ usuario, onCerrar, onActualizar }) => {
     return Object.keys(e).length === 0;
   };
 
-  // ← async porque editarUsuario ahora llama PUT /usuarios/:id
   const handleGuardar = async () => {
     if (!validar()) return;
     const datos = { nombre: form.nombre, carrera: form.carrera };
