@@ -1,9 +1,3 @@
-// ============================================================
-// src/services/evento.service.js
-// Lógica de negocio de eventos
-// Calcula el campo "pasado" automáticamente según la fecha
-// ============================================================
-
 import { eventoRepository } from '../repositories/evento.repository.js';
 
 function calcularPasado(fechaISO) {
