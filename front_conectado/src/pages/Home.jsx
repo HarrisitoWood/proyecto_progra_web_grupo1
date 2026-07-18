@@ -1,8 +1,3 @@
-// ============================================================
-// pages/Home.jsx  — sin cambios visuales
-// Solo cambio: useEffect ahora es async para llamar al API
-// ============================================================
-
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './homeStyles';
@@ -25,7 +20,6 @@ const Home = () => {
   const [mostrarPerfil,       setMostrarPerfil]      = useState(false);
   const [cargando,            setCargando]           = useState(true);
 
-  // ← async para poder usar await dentro del useEffect
   useEffect(() => {
     if (localStorage.getItem('rol') !== 'usuario') { navigate('/'); return; }
 
