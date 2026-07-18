@@ -1,10 +1,3 @@
-// ============================================================
-// src/controllers/auth.controller.js
-// Solo maneja req/res — delega lógica al service
-// Como muestra el profe: el controlador no hace nada más
-// que extraer datos del body y devolver la respuesta
-// ============================================================
-
 import { registrar, login } from '../services/auth.service.js';
 
 export async function registro(req, res) {
