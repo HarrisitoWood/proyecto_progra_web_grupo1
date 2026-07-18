@@ -1,8 +1,3 @@
-// ============================================================
-// pages/Registro.jsx  — sin cambios visuales
-// Solo cambio: handleSubmit ahora es async (registrarUsuario es async)
-// ============================================================
-
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import logo from '../assets/ulimaLogo.png';
@@ -30,7 +25,6 @@ const Registro = () => {
     return e;
   };
 
-  // ← async porque registrarUsuario() ahora llama al API
   const handleSubmit = async (e) => {
     e.preventDefault();
     const datos = {
