@@ -1,9 +1,3 @@
-// ============================================================
-// index.js — Punto de entrada del servidor
-// Conecta a PostgreSQL y luego levanta Express
-// Compatible con Vercel (exporta app) y local (app.listen)
-// ============================================================
-
 import dotenv      from 'dotenv';
 import app         from './src/app.js';
 import { sequelize } from './src/config/database.js';
@@ -28,7 +22,6 @@ async function iniciar() {
   }
 }
 
-// En Vercel exporta la app; en local inicia el servidor
 if (process.env.VERCEL) {
   iniciar().catch(console.error);
 } else {
