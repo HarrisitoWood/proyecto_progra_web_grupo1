@@ -1,8 +1,3 @@
-// ============================================================
-// pages/admin/AdminDashboard.jsx  — sin cambios visuales
-// Solo cambio: useEffect y handlers son async para llamar al API
-// ============================================================
-
 import { useState, useEffect } from 'react';
 import { useNavigate }         from 'react-router-dom';
 import styles                  from './adminStyles';
@@ -31,7 +26,6 @@ const AdminDashboard = () => {
   const [eventoElim,    setEventoElim]   = useState(null);
   const [toast,         setToast]        = useState('');
 
-  // ← async para poder usar await
   useEffect(() => {
     if (localStorage.getItem('rol') !== 'admin') { navigate('/'); return; }
 
@@ -56,7 +50,6 @@ const AdminDashboard = () => {
     setTimeout(() => setToast(''), 3000);
   };
 
-  // ← async: crearEvento ahora llama POST /eventos
   const handleCrear = async (datos) => {
     try {
       const nuevo = await crearEvento(datos);
@@ -68,7 +61,6 @@ const AdminDashboard = () => {
     }
   };
 
-  // ← async: editarEvento ahora llama PUT /eventos/:id
   const handleEditar = async (datos) => {
     try {
       const lista = await editarEvento(eventoEditar.id, datos);
@@ -81,7 +73,6 @@ const AdminDashboard = () => {
     }
   };
 
-  // ← async: eliminarEvento ahora llama DELETE /eventos/:id
   const handleEliminar = async () => {
     try {
       const lista = await eliminarEvento(eventoElim.id);
