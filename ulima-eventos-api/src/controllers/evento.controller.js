@@ -1,8 +1,3 @@
-// ============================================================
-// src/controllers/evento.controller.js
-// Solo maneja req/res — delega lógica al service
-// ============================================================
-
 import {
   listarEventos, listarEventosProximos, listarEventosHistorial, obtenerEvento,
   crearEvento, editarEvento, eliminarEvento,
